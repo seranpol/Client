@@ -51,7 +51,7 @@ namespace Client
                 //await Task.Delay(0);
                 //await Task.Delay(0).ConfigureAwait(false);
                 //await Task.Delay(100);
-                //await Task.Delay(100).ConfigureAwait(false);
+                await Task.Delay(100).ConfigureAwait(false);
 
                 var startTime = sw.ElapsedMilliseconds;
 
