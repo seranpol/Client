@@ -1,0 +1,27 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Background="AliceBlue">
+            <Button x:Name="Execute1" Content="Execute Boxes" Click="Execute1_Click" Width="100" Margin="5" />
+            <Button x:Name="Execute2" Content="Execute Deadlock" Click="Execute2_Click" Width="100" Margin="5"/>
+            <TextBlock x:Name="Status" Margin="5" Width="200" />
+        </StackPanel>
+
+        <Canvas Name="DrawArea" Grid.Row="1" Background="LightYellow">
+
+        </Canvas>
+
+
+    </Grid>
+</Window>
